@@ -1,0 +1,68 @@
+.s-service
+  padding: 30px 0
+  .s-service-header
+    text-align: center
+    padding-bottom: 30px
+    span
+      text-transform: uppercase
+      font-size: $section-header-size
+    .first-text
+      margin-right: 5px
+    .second-text
+      color: $secondary
+  .s-service-content
+    text-align: center
+    margin-bottom: 15px
+    .audit-block,
+    .install-block,
+    .tech-block
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      height: 315px
+      .block-hover
+        position: relative
+        z-index: 2
+        min-width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .8)
+        .block-header
+          display: flex
+          height: 100px
+          width: 100%
+          align-items: center
+          justify-content: center
+          color: $main
+          font-size: 36px
+          text-transform: uppercase
+          font-weight: 700
+          padding-bottom: 15px
+          padding-top: 15px
+          line-height: 1
+        .block-content
+          position: relative
+          color: $main
+          ul
+            text-align: left
+            padding: 0 45px
+            li
+              margin-top: 5px
+              margin-bottom: 5px
+        .block-button
+          position: absolute
+          width: 100%
+          bottom: 15px
+          text-align: center
+          .button-outline
+            bottom: 0
+            width: 180px
+            color: $main
+            border: 1px solid $main
+            background: transparent
+            border-radius: 20px
+            padding: 15px 0
+            transition: all 0.5s ease-out
+            &:hover
+              background-color: $main
+              color: $font-color
+              cursor: pointer

@@ -1,0 +1,45 @@
+{
+  "name": "host-is-on",
+  "version": "0.0.1",
+  "description": "Design for host-is-on web site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tAruuuch/host-is-on.git"
+  },
+  "keywords": [
+    "design",
+    "host-is-on",
+    "web",
+    "site"
+  ],
+  "author": "Artemchuk Dmytro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tAruuuch/host-is-on/issues"
+  },
+  "homepage": "https://github.com/tAruuuch/host-is-on#readme",
+  "devDependencies": {
+    "browser-sync": "",
+    "del": "",
+    "gulp": "",
+    "gulp-autoprefixer": "",
+    "gulp-cache": "",
+    "gulp-changed": "",
+    "gulp-clean-css": "",
+    "gulp-imagemin": "",
+    "gulp-notify": "",
+    "gulp-pngquant": "",
+    "gulp-print": "",
+    "gulp-pug": "",
+    "gulp-rename": "",
+    "gulp-sass": "",
+    "gulp-uncss": "",
+    "jquery": "",
+    "owl.carousel": "^2.2.0"
+  }
+}

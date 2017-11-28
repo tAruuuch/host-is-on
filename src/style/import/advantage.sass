@@ -1,0 +1,39 @@
+.s-advantage
+  padding: 30px 0
+  .s-advantage-content
+    .advantage-item
+      text-align: center
+      .adv-hover
+        color: $font-color
+        &:hover
+          color: $secondary
+          text-decoration: none
+      .advantage-item-title
+        margin: 15px 0
+        font-weight: 700
+      .advantage-item-content
+        .advantage-item-image
+          margin: auto
+          position: relative
+          width: 175px
+          height: 240px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          .advantage-item-image-hover
+            position: relative
+            width: 175px
+            height: 240px
+            &:hover
+              background-color: rgba(0, 0, 0, .5)
+              i
+                color: $main
+                transition: all 0.5s ease-out
+                opacity: 1
+            i
+              position: absolute
+              top: 40%
+              left: 42%
+              color: $main
+              opacity: 0
+              font-size: 2.5em

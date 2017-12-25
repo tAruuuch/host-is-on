@@ -2,7 +2,15 @@
   .container
     max-width: 1170px !important
 
-section, footer
+section
+  opacity: 0
+  animation-delay: .5s
+  position: relative
+
+header
+  opacity: 0
+
+footer
   position: relative
 
 body
@@ -17,7 +25,11 @@ body
   &:hover
     cursor: pointer
     transition: all .3s ease-out
+  &:focus
+    outline: 0 !important
 
+button:focus
+  outline: 0 !important
 
 .s-section-header
   text-align: center

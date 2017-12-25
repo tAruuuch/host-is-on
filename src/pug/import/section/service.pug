@@ -14,7 +14,9 @@ section.s-service
                 li выбор решения 
                 li подбор конфигурации
             .block-button
-              button(onclick="").button.button-outline Подробнее
+              button(onClick="Audit()").button.button-outline Подробнее
+          .block-white-hover
+            .block-header аудит
       .col-lg-4 
         .install-block(style="background-image:url(img/service/install.png);")
           .block-hover
@@ -27,7 +29,9 @@ section.s-service
                 li настройка служб, сети, ролей и подобного
                 li оптимизация и тюнинг
             .block-button
-              button(onclick="").button.button-outline Подробнее
+              button(onclick="Install()").button.button-outline Подробнее
+          .block-white-hover
+            .block-header ИНСТАЛЯЦИЯ НАСТРОЙКА
       .col-lg-4 
         .tech-block(style="background-image:url(img/service/tech.png);")
           .block-hover
@@ -40,5 +44,131 @@ section.s-service
                 li сетевые атаки
                 li восстановление
             .block-button
-              button(onclick="").button.button-outline Подробнее
-    .s-service-block-content
+              button(onclick="Tech()").button.button-outline Подробнее
+          .block-white-hover
+            .block-header ТЕХНИЧЕСКАЯ ПОДДЕРЖКА
+    .s-service-items-content
+      .s-service-tech-content
+        .row
+          .col-lg-4.tech-item-desc.tech-item-1 
+            .tech-block-desc
+              img(src="img/service/tech_1.png")
+              .tech-item-header Плановая
+              .tech-item-description
+                ul
+                  li Мониторинг систем
+                  li Обновление ПО
+                  li Ревизия БД
+          .col-lg-4.tech-item-desc.tech-item-2 
+            .tech-block-desc
+              img(src="img/service/tech_2.png")
+              .tech-item-header Ситуативная
+              .tech-item-description
+                ul
+                  li Мониторинг систем
+                  li Обновление ПО
+                  li Ревизия БД
+          .col-lg-4.tech-item-desc.tech-item-3 
+            .tech-block-desc
+              img(src="img/service/tech_3.png")
+              .tech-item-header Аварийная
+              .tech-item-description
+                ul
+                  li Мониторинг систем
+                  li Обновление ПО
+                  li Ревизия БД
+      .s-service-install-content
+        .row
+          .col-lg-4.install-item-desc.install-item-1
+            .step-1 
+              .row.st
+                .col-lg-5.align-self-center.text-center
+                  .step-img.rounded-circle
+                    img(src="img/service/install_1.png")
+                .col-lg-7.step-description
+                  .step-header Установка
+                  .step-descr
+                    ul
+                      li
+                        span Установка ОС
+                      li
+                        span Установка ПО
+                      li
+                        span Базовая настройка
+                      li
+                        span Установка ролей
+                      li
+                        span Установка служб
+              .blue-line1
+          .col-lg-4.install-item-desc.install-item-2
+            .step-2
+              .row.st
+                .col-lg-5.align-self-center.text-center
+                  .step-img.rounded-circle
+                    img(src="img/service/install_2.png")
+                .col-lg-7.step-description
+                  .step-header НАСТРОЙКА
+                  .step-descr
+                    ul
+                      li
+                        span Настройка ОС
+                      li
+                        span Настройка ПО
+                      li
+                        span Базовая настройка
+                      li
+                        span Найстройка ролей
+                      li
+                        span Настройка служб
+              .blue-line2
+          .col-lg-4.install-item-desc.install-item-3
+            .step-3
+              .row.st
+                .col-lg-5.align-self-center.text-center
+                  .step-img.rounded-circle
+                    img(src="img/service/install_3.png")
+                .col-lg-7.step-description
+                  .step-header ОПТИМИЗАЦИЯ
+                  .step-descr
+                    ul
+                      li
+                        span Оптимизация ОС
+                      li
+                        span Оптимизация ПО
+                      li
+                        span Базовая настройка
+                      li
+                        span Оптимизация ролей
+                      li
+                        span Установка служб
+              .blue-line3
+      .s-service-audit-content
+        .row
+          .col-lg-12.audit-item-desc
+            ul.audit
+              li.audit_item_1 
+                img(src="img/service/audit_1.png")
+              li.audit_item_2  
+                img(src="img/service/audit_2.png")
+              li.audit_item_3  
+                img(src="img/service/audit_3.png")
+              li.audit_item_4  
+                img(src="img/service/audit_4.png")
+              li.audit_item_5  
+                img(src="img/service/audit_5.png")
+            ul.audit-text
+              li.audit_item_1  
+                p.first-word Анализ 
+                p тех требований
+              li.audit_item_2  
+                p.first-word Анализ 
+                p инфраструктуры
+              li.audit_item_3  
+                p.first-word Поиск 
+                p решения
+              li.audit_item_4  
+                p.first-word Составляем
+                p тех задание
+              li.audit_item_5 
+                p.first-word Готовое 
+                p решение

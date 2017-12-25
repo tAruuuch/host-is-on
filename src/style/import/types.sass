@@ -2,56 +2,117 @@
   width: 100%
   background-color: $section-gray-back
   padding: 30px 0 0
-  .type-list
-    display: flex
-    flex-wrap: wrap
-    .type-item
-      flex: 1 calc(100% / 4)
-      margin-bottom: 30px
-      .type-block-img
+
+  .button
+    width: 200px
+    height: 60px
+    font-weight: 700
+    padding: 0 15px
+    border-radius: 30px
+    text-transform: uppercase
+    &:hover
+      background: transparent
+      border: 2px solid $main
+      cursor: pointer
+  .button-linux
+    background-color: #de7b22
+    border: 2px solid #de7b22
+  .button-windows
+    background-color: #5d83d9
+    border: 2px solid #5d83d9
+  .button-web
+    background-color: #538f6f
+    border: 2px solid #538f6f
+  .button-db
+    background-color: #8bc930
+    border: 2px solid #8bc930
+  .button-security
+    background-color: #4d72c8
+    border: 2px solid #4d72c8
+  .button-virtual
+    background-color: #a53c30
+    border: 2px solid #a53c30
+  .button-complex
+    background-color: #c55626
+    border: 2px solid #c55626
+  .button-ready
+    background-color: #deb932
+    border: 2px solid #deb932
+
+
+.type-test-item
+  opacity: 0
+  &:first-child
+    animation-delay: .2s
+  &:nth-child(2)
+    animation-delay: .4s
+  &:nth-child(3)
+    animation-delay: .8s
+  &:nth-child(4)
+    animation-delay: 1s
+  &:nth-child(5)
+    animation-delay: 1.2s
+  &:nth-child(6)
+    animation-delay: 1.4s
+  &:nth-child(7)
+    animation-delay: 1.6s
+  &:last-child
+    animation-delay: 1.8s
+  .type-test-back
+    position: relative
+    z-index: 1
+    height: 265px
+    margin-bottom: 30px
+    .type-test-linux
+      background-position: 160px bottom
+      &:hover
+        background-position: bottom center
+    .type-test-windows
+      background-position: 100px -50px
+      &:hover
         background-position: center
-        background-repeat: no-repeat
-        background-size: cover
-        height: 265px
-        .type-block-button
-          position: relative
-          z-index: 2
-          min-width: 100%
-          height: 100%
-          display: flex
-          justify-content: center
-          align-items: center
-          .button
-            width: 200px
-            height: 60px
-            font-weight: 700
-            padding: 0 15px
-            border-radius: 30px
-            &:hover
-              background: transparent
-              border: 2px solid $main
-              cursor: pointer
-          .button-linux
-            background-color: #de7b22
-            border: 2px solid #de7b22
-          .button-windows
-            background-color: #5d83d9
-            border: 2px solid #5d83d9
-          .button-web
-            background-color: #538f6f
-            border: 2px solid #538f6f
-          .button-db
-            background-color: #8bc930
-            border: 2px solid #8bc930
-          .button-security
-            background-color: #4d72c8
-            border: 2px solid #4d72c8
-          .button-virtual
-            background-color: #a53c30
-            border: 2px solid #a53c30
-          .button-complex
-            background-color: #c55626
-            border: 2px solid #c55626
-          .button-ready
-            background-color: #deb932
-            border: 2px solid #deb932
+    .type-test-web
+      background-position: -140px bottom
+      &:hover
+        background-position: bottom center
+    .type-test-db
+      background-position: center 190px
+      &:hover
+        background-position: bottom center
+    .type-test-security
+      background-position: center 150px
+      &:hover
+        background-position: bottom center
+    .type-test-virtual
+      background-position: 160px bottom
+      &:hover
+        background-position: center bottom
+    .type-test-complex
+      background-position: center 120px
+      &:hover
+        background-position: bottom center
+    .type-test-ready
+      background-position: 160px bottom
+      &:hover
+        background-position: bottom center
+    .type-test-front
+      top: 0
+      left: 0
+      display: flex
+      justify-content: center
+      position: relative
+      z-index: 5
+      min-width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      transition: 1.2s all ease-in
+      button
+        position: relative
+        z-index: 7
+        align-self: center
+      img
+        position: absolute
+        z-index: 6
+        align-self: flex-end
+        right: -15px
+        bottom: -15px

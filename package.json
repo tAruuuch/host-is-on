@@ -1,6 +1,6 @@
 {
   "name": "host-is-on",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Design for host-is-on web site",
   "main": "gulpfile.js",
   "scripts": {

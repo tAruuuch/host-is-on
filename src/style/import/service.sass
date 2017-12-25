@@ -10,6 +10,160 @@
       margin-right: 5px
     .second-text
       color: $secondary
+  .s-service-items-content
+    margin-top: 30px
+    .tech-block-desc,
+    .audit-item-desc
+      background-color: $section-gray-back
+    .blue-line1
+      height: 20px
+      width: 100%
+      background-color: #6ea6fc
+    .blue-line2
+      height: 20px
+      width: 100%
+      background-color: #518bf5
+    .blue-line3
+      height: 20px
+      width: 100%
+      background-color: #4578dd
+    .st
+      padding: 36.5px
+    .step-1
+      background-color: #f8f8f8
+      margin-right: -15px
+    .step-2
+      background-color: #f1f1f1
+      margin: 0 -15px
+    .step-3
+      background-color: #e7e7e7
+      margin-left: -15px
+    .s-service-audit-content
+      transition: all .3s ease-out
+      display: none
+      .row
+        margin: 0
+      .audit-item-desc
+        .audit
+          text-align: center
+          margin: 30px 0 0
+          .audit_item_1
+            animation-delay: .1s
+          .audit_item_2
+            animation-delay: .6s
+          .audit_item_3
+            animation-delay: 1.1s
+          .audit_item_4
+            animation-delay: 1.6s
+          .audit_item_5
+            animation-delay: 2.1s
+          li
+            position: relative
+            z-index: 3
+            width: 128px
+            height: 128px
+            text-align: center
+            border-radius: 50%
+            background: $section-gray-back
+            margin: 0 2em
+            display: inline-block
+            color: white
+            border: 2px solid $service-line-color
+            img
+              position: relative
+              top: 25%
+            &::before
+              content: ' '
+              position: absolute
+              top: 50%
+              left: -4.5em
+              width: 4.5em
+              height: .2em
+              border: 1px dashed $service-line-color
+              z-index: 1
+            &:first-child::before
+              display: none
+        .audit-text
+          list-style: none
+          text-align: center
+          margin: 15px 0 30px
+          .audit_item_1
+            animation-delay: .1s
+          .audit_item_2
+            animation-delay: .6s
+          .audit_item_3
+            animation-delay: 1.1s
+          .audit_item_4
+            animation-delay: 1.6s
+          .audit_item_5
+            animation-delay: 2.1s
+          li
+            width: 128px
+            margin: 0 2em
+            display: inline-block
+            position: relative
+            .first-word
+              color: $secondary
+            p
+              margin: 0
+    .s-service-tech-content
+      transition: all .3s ease-out
+      display: none
+      .tech-item-1
+        animation-delay: .1s
+      .tech-item-2
+        animation-delay: .7s
+      .tech-item-3
+        animation-delay: 1.3s
+      .tech-item-desc
+        text-align: center
+        .tech-block-desc
+          padding: 23.5px
+          .tech-item-header
+            margin-top: 30px
+            margin-bottom: 15px
+            font-size: 2.143em
+            font-weight: 700
+            text-transform: uppercase
+          .tech-item-description
+            ul
+              list-style: none
+              padding: 0
+              margin: 0
+              li
+                margin-top: 10px
+    .s-service-install-content
+      transition: all .3s ease-out
+      display: none
+      .install-item-1
+        animation-delay: .1s
+      .install-item-2
+        animation-delay: .7s
+      .install-item-3
+        animation-delay: 1.3s
+      .step-img
+        width: 106px
+        height: 106px
+        background-color: $main
+        img
+          position: relative
+          top: 20%
+      .step-description
+        color: $secondary
+        .step-header
+          font-weight: 700
+          text-transform: uppercase
+          margin-bottom: 15px
+        .step-descr
+          ul
+            margin: 0
+            padding: 0 0 0 15px
+            li
+              margin-bottom: 10px
+              &:last-child
+                margin-bottom: 0
+              span
+                color: $font-color
   .s-service-content
     text-align: center
     margin-bottom: 15px
@@ -20,6 +174,24 @@
       background-position: center
       background-size: cover
       height: 315px
+      .block-white-hover
+        position: relative
+        z-index: 2
+        min-width: 100%
+        height: 100%
+        background-color: rgba(255, 255, 255, .8)
+        display: none
+        text-align: center
+        .block-header
+          position: relative
+          z-index: 5
+          align-self: center
+          text-align: center
+          line-height: 1
+          text-transform: uppercase
+          font-size: 2.571em
+          font-weight: 900
+          width: 100%
       .block-hover
         position: relative
         z-index: 2

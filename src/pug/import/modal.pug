@@ -1,0 +1,27 @@
+#modalOrder.modal
+  .modal-content
+    .modal-header
+      .modal-title Оставить заявку
+    form(action='/{$s_url}/save/db/', method='post')
+      .modal-body
+        label Ваше имя:
+          input#name(type='text', placeholder='Имя', required='', name='name')
+        label Выберите услугу:
+          select#select(name='service', required='')
+            option 1
+            option 1
+            option 1
+            option 1
+            option 1
+            option 1
+            option 1
+            option 1
+        label Телефон:
+          input#phone.phone(type='text', placeholder='Телефон', required='', name='phone')
+        label E-mail:
+          input#email(name='email', placeholder='Email', required='')
+        label Опишите вашу проблему 
+          span (необязательно)
+          textarea#description(name='comment', cols='50', rows='5', placeholder='Ваше обращение', required='')
+      .modal-footer
+        input#submitOrder.button.button-accept(type='submit', value='Оставить заявку', name='submitOrder')

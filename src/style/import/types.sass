@@ -3,41 +3,42 @@
   background-color: $section-gray-back
   padding: 30px 0 0
 
-  .button
-    width: 200px
-    height: 60px
-    font-weight: 700
-    padding: 0 15px
-    border-radius: 30px
-    text-transform: uppercase
-    &:hover
-      background: transparent
-      border: 2px solid $main
-      cursor: pointer
-  .button-linux
-    background-color: #de7b22
-    border: 2px solid #de7b22
-  .button-windows
-    background-color: #5d83d9
-    border: 2px solid #5d83d9
-  .button-web
-    background-color: #538f6f
-    border: 2px solid #538f6f
-  .button-db
-    background-color: #8bc930
-    border: 2px solid #8bc930
-  .button-security
-    background-color: #4d72c8
-    border: 2px solid #4d72c8
-  .button-virtual
-    background-color: #a53c30
-    border: 2px solid #a53c30
-  .button-complex
-    background-color: #c55626
-    border: 2px solid #c55626
-  .button-ready
-    background-color: #deb932
-    border: 2px solid #deb932
+  a
+    .button
+      width: 200px
+      height: 60px
+      font-weight: 700
+      padding: 0 15px
+      border-radius: 30px
+      text-transform: uppercase
+      &:hover
+        background: transparent
+        border: 2px solid $main
+        cursor: pointer
+    .button-linux
+      background-color: #de7b22
+      border: 2px solid #de7b22
+    .button-windows
+      background-color: #5d83d9
+      border: 2px solid #5d83d9
+    .button-web
+      background-color: #538f6f
+      border: 2px solid #538f6f
+    .button-db
+      background-color: #8bc930
+      border: 2px solid #8bc930
+    .button-security
+      background-color: #4d72c8
+      border: 2px solid #4d72c8
+    .button-virtual
+      background-color: #a53c30
+      border: 2px solid #a53c30
+    .button-complex
+      background-color: #c55626
+      border: 2px solid #c55626
+    .button-ready
+      background-color: #deb932
+      border: 2px solid #deb932
 
 
 .type-test-item
@@ -106,10 +107,11 @@
       height: 100%
       background-repeat: no-repeat
       transition: 1.2s all ease-in
-      button
-        position: relative
-        z-index: 7
+      a
         align-self: center
+        button
+          position: relative
+          z-index: 7
       img
         position: absolute
         z-index: 6

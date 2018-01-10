@@ -10,6 +10,8 @@ $(document).ready(function() {
   $(".s-client").animated("fadeIn");
   $(".s-contact").animated("fadeIn");
 
+  $(".s-server-title").animated("fadeIn");
+
   $(".slider-background").animated("fadeIn", "fadeOut");
   $(".slide-header").animated("fadeIn", "fadeOut");
   $(".slide-text-1").animated("fadeIn", "fadeOut");
@@ -18,6 +20,24 @@ $(document).ready(function() {
   $(".slide-text-4").animated("fadeIn", "fadeOut");
   $(".slide-text-5").animated("fadeIn", "fadeOut");
   $(".slide-button").animated("fadeIn", "fadeOut");
+
+  $(".server-background").animated("fadeIn", "fadeOut");
+  $(".server-header").animated("fadeIn", "fadeOut");
+  $(".server-text-1").animated("fadeIn", "fadeOut");
+  $(".server-text-2").animated("fadeIn", "fadeOut");
+  $(".server-text-3").animated("fadeIn", "fadeOut");
+  $(".server-text-4").animated("fadeIn", "fadeOut");
+  $(".server-text-5").animated("fadeIn", "fadeOut");
+  $(".server-button").animated("fadeIn", "fadeOut");
+
+  $(".s-title").animated("fadeIn", "fadeOut");
+  $(".content-header").animated("fadeIn", "fadeOut");
+  $(".content-header-description").animated("fadeIn", "fadeOut");
+  $(".content-text").animated("fadeIn", "fadeOut");
+  $(".content-description img").animated("fadeInRight");
+
+  $(".s-page-description").animated("fadeIn");
+  $(".descr-item").animated("fadeIn");
 
   $(".type-test-item").animated("zoomIn", "zoomOut");
 
@@ -34,6 +54,21 @@ $(document).ready(function() {
   $(".tech-item-1").animated("fadeIn", "fadeOut");
   $(".tech-item-2").animated("fadeIn", "fadeOut");
   $(".tech-item-3").animated("fadeIn", "fadeOut");
+
+  $('.openOrder').bind("click", function() {
+    $('#modalOrder').css("display", "flex");
+  });
+
+  $('.close').bind("click", function() {
+    $('#modalOrder').css("display", "none").animated("fadeOut");
+  });
+
+  $('body').bind("click", function(event) {
+    if (event.target == $('#modalOrder')[0]) {
+      $('#modalOrder').css("display", "none");
+      event.preventDefault();
+    }
+  });
 
   $('.reviews').owlCarousel({
     loop: true,
@@ -71,7 +106,7 @@ $(document).ready(function() {
 
   $('.slider').owlCarousel({
     loop: true,
-    nav: true,
+    nav: false,
     navText: ['<i class="ion-chevron-left"></i>', '<i class="ion-chevron-right"></i>'],
     items: 1,
     dots: true

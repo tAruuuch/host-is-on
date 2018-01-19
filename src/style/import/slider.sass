@@ -2,7 +2,7 @@
   .slider
     .slider-item
       background-repeat: no-repeat
-      background-position: center 0
+      background-position: center 0аFf
       background-size: cover
       height: 600px
       &::after
@@ -13,6 +13,16 @@
         min-width: 100%
         height: 100%
         background-color: rgba(0, 0, 0, .5)
+      .slider-img
+        width: 100%
+        background-position: center
+        background-repeat: no-repeat
+        height: 370px
+        position: absolute
+        z-index: 5
+        top: 0
+        margin-top: 140px
+        background-size: contain
       .slider-background
         background-repeat: no-repeat
         background-position: center
@@ -25,10 +35,11 @@
         z-index: 3
         animation-delay: .8s
         opacity: 0
+        margin-top: 140px
       .slide-description
         line-height: 1
         position: relative
-        z-index: 5
+        z-index: 6
         height: 370px
         color: $main
         padding-top: 140px
@@ -74,6 +85,9 @@
               background-color: $main
               border: 2px solid $main
               color: $font-color
+    .owl-item
+      img
+        max-width: 100%
     .owl-nav
       bottom: 0
       width: 100%

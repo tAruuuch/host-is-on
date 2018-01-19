@@ -12,7 +12,6 @@ $(document).ready(function() {
 
   $(".s-server-title").animated("fadeIn");
 
-  $(".slider-background").animated("fadeIn", "fadeOut");
   $(".slide-header").animated("fadeIn", "fadeOut");
   $(".slide-text-1").animated("fadeIn", "fadeOut");
   $(".slide-text-2").animated("fadeIn", "fadeOut");
@@ -20,6 +19,8 @@ $(document).ready(function() {
   $(".slide-text-4").animated("fadeIn", "fadeOut");
   $(".slide-text-5").animated("fadeIn", "fadeOut");
   $(".slide-button").animated("fadeIn", "fadeOut");
+  $(".slider-img").animated("fadeInRight");
+  $(".slider-background").animated("fadeInRight");
 
   $(".server-background").animated("fadeIn", "fadeOut");
   $(".server-header").animated("fadeIn", "fadeOut");
@@ -34,7 +35,17 @@ $(document).ready(function() {
   $(".content-header").animated("fadeIn", "fadeOut");
   $(".content-header-description").animated("fadeIn", "fadeOut");
   $(".content-text").animated("fadeIn", "fadeOut");
-  $(".content-description img").animated("fadeInRight");
+
+  $("#windows img").animated("fadeInDown");
+  $("#linux img").animated("fadeInRight");
+  $("#web img").animated("fadeIn");
+  $("#virtual img").animated("fadeInUp");
+  $("#database img").animated("fadeInDown");
+  $("#ready img").animated("fadeInRight");
+  $("#complex img").animated("fadeIn");
+  $("#security img").animated("fadeInUp");
+
+  $(".s-server-title").animated("fadeInDown");
 
   $(".s-page-description").animated("fadeIn");
   $(".descr-item").animated("fadeIn");

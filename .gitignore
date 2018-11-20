@@ -1,8 +1,12 @@
 # Folder with compile project, you need only source code
-dist
+dist/
+src/
+
+gulpfile.js
+package.json
 
 # Folder with package
-node_modules
+node_modules/
 
 # Sass cache
 .sass-cache
